@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Mohammad Jafari</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="container">
+            <a class = "logo" href="#">Mohammad<span>Jafari</span></a>
+            <img id = "mobile-cta" class="mobile-menu-btn" src="images/menu.svg" alt="Menu">
+            <nav>
+                <img id = "mobile-exit" class="mobile-exitbt" src="images/exit.svg" alt="exit-btn">
+                <ul class="prim-nav">
+                    <li class="current"><a href="#">Home</a></li>
+                    <li><a href="#boutme">About me</a></li>
+                    <li><a href="/gallery.html">Gallery</a></li>
+                    
+                </ul>
+                <ul class="sec-nav">
+                    <li ><a href="#">Contact me</a></li>
+                    
+                    
+                    
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <section class="hero">
+        <div class="left-col">
+            
+            <h1>I am Mohammad Jafari </h1>
+            <p class="subhead">Physics student , Artist , Programmer</p>
+            <div class="hero-cta">
+                <a href="#" class="herobtn">Who am i?</a>
+
+            </div>
+        </div>
+
+    </section>
+    <section class="secsec">
+        <div class="container">
+            <center>
+            <a href="https://github.com/mohammadjafariph"> <img src="images/git.png" alt="Github" width="100px" height="100px"></a> 
+            <a href="https://twitter.com/ohamfj"> <img src="images/twit.png" alt="Twitter" width="100px" height="100px"></a>
+            <a  href="#"> <img class="sign" src="images/SIGNT.jpg" alt="sign" width="160px" height="140px"></a>
+            <a href="https://instagram.com/notnowbrah"> <img src="images/inst.png" alt="Instagram" width="100px" height="100px"></a>
+            <a href="mail:mohammadjafariph@gmail.com"> <img src="images/mail.png" alt="Mail" width="100px" height="90px"></a>
+            
+            </center>
+            
+           
+        
+        </div>
+        
+        
+    </section>
+    <section class="testo" id='boutme'>
+       <div class="container">
+           <ul>
+               <li>
+                   <img src="images/unnamed.png" alt="Pic">
+                   <blockquote>Mohaghegh Ardabili University (UMA) - Undergraduate Student</blockquote>
+                   <cite>2020 - Now</cite>
+                 
+               </li>
+               
+           </ul>
+       </div>
+    </section>
+    <section class="contact">
+        <div class="container">
+            <div class="contact-left">
+                <h2>Contact</h2>
+                <form action="">
+                    <label for="name">Name</label>
+                    <input id = "name" type="text " name="name">
+                    <label for="message">Message</label>
+                    <textarea id = "message" name="message" cols = "30" rows="10" placeholder="Your Message"></textarea>
+                    <input class="send-message" type="submit" value="Send Message">
+                </form>
+            </div>
+        </div>
+    </section>
+    <script>
+        const mobileBtn = document.getElementById('mobile-cta')
+            nav = document.querySelector('nav')
+            mobileBtnexit = document.getElementById('mobile-exit');
+            mobileBtn.addEventListener('click' , () => {
+                nav.classList.add('menu-btn');
+            })
+            mobileBtnexit.addEventListener('click' , () => {
+                nav.classList.remove('menu-btn');
+            })
+
+
+    </script>
+</body>
+</html>
